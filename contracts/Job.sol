@@ -8,8 +8,8 @@ contract Job {
   SharedStructs.TokenValue[] public offeredValues;
 
   function initialize(SharedStructs.TokenValue[] calldata  _offeredValues) public {
-    // for(uint i = 0; i < _offeredValues.length; i++) {
-    //   offeredValues.push(_offeredValues[i]);
-    // }
+    for(uint i = 0; i < _offeredValues.length; i++) {
+      offeredValues.push(_offeredValues[i]);
+    }
   }
 }
